@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Streaming App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Video Streaming App</h1>
+  </header>
+
+  <!-- Form Section -->
+  <section class="upload-section">
+    <h2>Upload Video</h2>
+    <div class="form-container">
+      <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="video">Select Video:</label>
+        <input type="file" id="video" name="video" accept="video/*" required>
+        
+        <label for="segmentTime">Segment Duration (s):</label>
+        <input type="number" id="segmentTime" name="segmentTime" placeholder="Segment Time (s)" min="1" required>
+        
+        <label for="resolution">Resolution:</label>
+        <select id="resolution" name="resolution" required>
+          <option value="640x360">360p</option>
+          <option value="854x480">480p</option>
+          <option value="1280x720">720p</option>
+        </select>
+        
+        <button type="submit" id="uploadButton">Upload Video</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Main container for video player and playlist -->
+  <div class="main-container">
+    <!-- Video Player Section -->
+    <div class="video-section">
+      <video id="videoPlayer" class="video-player" controls>
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Playlist Section -->
+    <div class="playlist-section">
+      <h2>Chapters</h2>
+      <ul id="playlist" class="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

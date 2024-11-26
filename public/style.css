@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 5px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text within the header */
+
+}
+  
+  /* Upload Section */
+  .upload-section {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+
+  }
+  
+  .upload-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+
+  }
+  
+  .form-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Make the container take full width */
+    gap: 20px; /* Optional: Add some space between elements */
+}
+  
+  button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* Main Container */
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .video-section {
+    flex: 2;
+  }
+  
+  .video-player {
+    width: 100%;
+    height:auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .playlist-section {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .playlist {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .playlist li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .playlist li:hover {
+    background: #f4f4f4;
+  }
+  
